@@ -1,0 +1,11 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# build / dependency junk (none used here, but future-proofing)
+node_modules/
+dist/
+.cache/
