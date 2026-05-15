@@ -85,7 +85,7 @@
     font-size: 11px;
     letter-spacing: .14em;
     text-transform: uppercase;
-    color: var(--ink-mute);
+    color: var(--accent);
     font-weight: 500;
   }
 
@@ -137,8 +137,8 @@
   .mark {
     width: 26px; height: 26px;
     border-radius: 4px;
-    background: var(--ink);
-    color: var(--bg);
+    background: var(--accent);
+    color: var(--accent-ink);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -391,7 +391,7 @@
     font-weight: 500;
     font-size: clamp(20px, 1.8vw, 26px);
     letter-spacing: -.02em;
-    color: var(--ink);
+    color: var(--accent);
     line-height: 1.1;
   }
   .stat .k {
@@ -467,9 +467,10 @@
     font-size: 10.5px;
     letter-spacing: .1em;
     text-transform: uppercase;
-    color: var(--ink-mute);
+    color: var(--accent);
     padding: 4px 8px;
-    border: 1px solid var(--rule-soft);
+    border: 1px solid color-mix(in oklab, var(--accent) 30%, transparent);
+    background: color-mix(in oklab, var(--accent) 8%, transparent);
     border-radius: 3px;
   }
   .svc-title {
